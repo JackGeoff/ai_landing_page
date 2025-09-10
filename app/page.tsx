@@ -6,6 +6,7 @@ import { SplineScene } from "@/components/ui/spline-scene"
 import AnimatedGradientBackground from "@/components/ui/animated-gradient-background"
 import { SparklesCore } from "@/components/ui/sparkles"
 import { BentoGrid, BentoCard } from "@/components/ui/bento-grid"
+import ThreeDModel from "@/components/ThreeDModel"
 import {
   CheckCircle,
   ArrowRight,
@@ -70,10 +71,7 @@ export default function HomePage() {
 
             {/* Right content - 3D Scene */}
             <div className="relative h-[500px] lg:h-[600px]">
-              <SplineScene
-                scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-                className="w-full h-full"
-              />
+          <ThreeDModel />
             </div>
           </div>
         </div>
