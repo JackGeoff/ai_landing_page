@@ -9,7 +9,7 @@ import * as THREE from "three"
 
 // 👇 Model loader
 function Model() {
-  const obj = useLoader(OBJLoader, "/white_mesh.obj")
+  const obj = useLoader(OBJLoader, "/robot.glb")
 
   obj.traverse((child: any) => {
     if (child instanceof THREE.Mesh) {
@@ -36,3 +36,4 @@ function Scene() {
 
 // 👇 Export with SSR disabled (important!)
 export default dynamic(() => Promise.resolve(Scene), { ssr: false })
+
